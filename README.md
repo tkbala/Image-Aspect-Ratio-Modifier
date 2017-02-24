@@ -1,4 +1,5 @@
 Image Aspect Ratio Modifier
+---------------------------
 
 This is a python program that enables you to resize an image to a particular aspet ratio by superimposing the original image over a blured background. A sample input.jpg and output.jpg can be seen in this folder
 
