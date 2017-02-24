@@ -36,10 +36,10 @@ if(aratio != -1):
 		final_width = aratio*height
 		final_width = int(final_width)
 		im_resized = im.resize((final_width,height))
-		#im_back = im_resized.filter(ImageFilter.GaussianBlur(radius=50))
-		im_back = im_resized.filter(ImageFilter.SMOOTH_BLUR)
+		im_back = im_resized.filter(ImageFilter.GaussianBlur(radius=50))
+		#im_back = im_resized.filter(ImageFilter.SMOOTH_BLUR)
 		im_back.paste(im,((final_width-width)/2,0))
-		im_back.show()
+		im_back.save(outfile)
 	if(orig_aratio>aratio):
 		final_height = (width*1.0)/(aratio*1.0)
 		final_height = int(final_height)
